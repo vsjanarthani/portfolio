@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+
+<!-- basic meta tag -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- mobile metas -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+
+<!-- style css link -->
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <title>Janarthani's Portfolio</title>
 </head>
 <body>
 
 <!-- Header -->
-    <header class="main">
-        <section class="name">
-            <h1>Janarthani V S</h1>
-            <h6>Welcome to my website!</h6>
-        </section>
+    <header id="home">
+        <h1>Janarthani V S</h1>
         <nav>
-        <ul>
+            <ul>
             <!-- Anchor element -->
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About Me</a></li>
               <li><a href="#work">My Work</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
               <li><a href="#contact">Contact Me</a></li>
-              <li><a href="#resume">Resume</a></li>
-        </ul>
+            </ul>
         </nav>
+        <section class="resume">
+            <button class="resume" type="download"><a href="./images/Resume.pdf" target="_blank">Download Resume</a></button>
+        </section>     
+        
     </header>
 
 <!-- About me Section -->
@@ -51,7 +60,37 @@
         </section>
     </section>
 
-<!-- contact me -->
+<!-- hero Section -->
+
+<!-- My work Section -->
+    <section>
+        <section class="work">
+            <h1 class="subheading"><span>My </span>Work</h1>
+        <p class="para">Making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover any web sites still</p>
+    </section>
+    <section class="container">
+        <article class="boxdesign1">
+            <!-- <div class="icon"><a href="#"><img src="images/power-full-icon.png"></a></div> -->
+            <h2 class="boxheading1">Work 1</h2>
+            <p class="boxpara">making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
+        </article>
+        <article class="boxdesign">
+            <!-- <div class="icon"><a href="#"><img src="images/optimised-icon.png"></a></div> -->
+            <h2 class="boxheading">Work 2</h2>
+            <p class="boxpara">making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
+        </article>
+        <article class="boxdesign">
+                <!-- <div class="icon"><a href="#"><img src="images/headfone-icon.png"></a></div> -->
+                <h2 class="boxheading">Work 3</h2>
+                <p class="boxpara">making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
+        </article>
+        <article class="boxdesign1">
+            <!-- <div class="icon"><a href="#"><img src="images/headfone-icon.png"></a></div> -->
+            <h2 class="boxheading1">Work 4</h2>
+            <p class="boxpara">making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still </p>
+    </article>		
+    </section>
+</section>
 
 </body>
 </html>
