@@ -72,11 +72,16 @@ header section button a {
 
 /* About me section */
 
-.about {
+#about {
 	width: 100%;
-	float: left;
+	display: flex;
 	margin-top: 40px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    
     }
 
 span {
@@ -85,7 +90,6 @@ span {
 
 .subheading {
 	width: 100%;
-	float: left;
 	text-align: center;
 	color: #030907;
     font-weight: 600;
@@ -95,8 +99,7 @@ span {
 
 .para {
 	width: 100%;
-	float: left;
-	text-align: center;
+    text-align: center;
 }
 
 .container, .container2 {
@@ -105,12 +108,11 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
-    align-items: center;  
+    align-items: stretch;  
 }
 
 .boxdesign1{
 	width: 30%;
-	float: left;
 	background-color: #2aaf80;
 	border-radius: 30px;
 	padding: 20px;
@@ -120,7 +122,6 @@ span {
 
 .boxdesign {
 	width: 30%;
-	float: left;
 	background-color: #ffffff;
 	border-radius: 30px;
 	padding: 20px;
@@ -128,14 +129,48 @@ span {
     box-shadow: 0px 0px 8px 0px;
 }
 
+.biopic img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Mywork Section */
+
+#mywork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.main {
+    width:100% ;
+    overflow: hidden;
+}
+
 .icon {
 	text-align: center;
 	margin-top: 40px;
 }
 
+.icon img {
+        height: 100px;
+        width: 180px;
+    
+}
+
+.icon img:hover {
+    height: 150px;
+    width: 270px;
+}
+
+
 .boxheading1 {
 	width: 100%;
-	float: left;
 	text-align: center;
 	margin-top: 20px;	
 	color: #ffffff;
@@ -143,7 +178,6 @@ span {
 
 .boxheading {
 	width: 100%;
-	float: left;
 	text-align: center;
 	margin-top: 20px;	
 	color:#2aaf80;
@@ -151,7 +185,6 @@ span {
 
 .boxpara {
 	width: 100%;
-	float: left;
 	text-align: center;
 	margin-top: 20px;	
 	color: #000;
@@ -159,15 +192,32 @@ span {
 
 /* Testimonial Section */
 
-#testimonials {
+#testimonials, #contact {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;  
+    align-items: center;
+    align-content: center;
+    margin-top: 40px;   
+    
 }
 
-.slider {
-    width: ;
-    overflow: hidden;
+.boxpara1 {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;	
+	color: #000;
+    font-family: cursive;
+}
+
+.boxheading2 {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;	
+	color:#2aaf80;
+    font-weight: bolder;
+    font-style: italic;
+    font-variant: small-caps;
 }
 
 .button {
@@ -190,13 +240,20 @@ span {
     font-size: larger;
     font-weight: bolder;
     font-family: fantasy;
-
 }  
 
-#slide1 {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.button a:hover {
+    font-size: 25px;
+    color: beige;
+    text-decoration: underline;
+}
+
+.designation {
+    font-size: small;
+    font-weight: bold;
+    color: #2aaf80;
+    text-align: center;
+    font-family: cursive;
 }
 /* Contact me */
 
@@ -207,14 +264,16 @@ span {
     height: 100%;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
 }
 
 .contactinfo form {
-    width: 60%;
+    width: 40em;
 	display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 1.5em;
 	background-color: #ffffff;
 	border-radius: 30px;
 	padding: 20px;
@@ -222,7 +281,8 @@ span {
     box-shadow: 0px 0px 8px 0p
 }
 
-.contactinfo form input {
+.contactinfo form input, 
+.contactinfo form textarea {
     border: 1px solid #2aaf80;
     display: inline-flex;
     padding: 7px 15px;
@@ -247,9 +307,17 @@ span {
 .contactinfo form button {
     color: whitesmoke;
     background-color: #2aaf80;
-    border: lightgreen;
+    border: blanchedalmond;
     padding: 10px 20px;
     font-size: 16px;
+}
+
+#contactname {
+    color: black;
+}
+
+#contactmessage {
+    height: 60px;
 }
 
 .links {
@@ -268,6 +336,8 @@ span {
 
 .links ul li a {
     color: whitesmoke;
+    font-size: larger;
+    margin-left: 40%;
 }
 
 /* Footer Section */
@@ -294,3 +364,5 @@ footer h3 {
     font-weight: lighter;
     font-family: cursive;
 }
+
+@media screen and 
