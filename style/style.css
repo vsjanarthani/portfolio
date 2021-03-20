@@ -11,10 +11,11 @@ html {
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: #666666;
-    line-height: 1.8;
+     font-size: 14px;
+     line-height: 1.8;
+     font-weight: normal;
 }
 
-/* Mobile first approach */
 /* appling styles to header */
 
 header {
@@ -33,7 +34,7 @@ header {
 }
 
 header h1 {
-    font-size: 80px;
+    font-size: 4vw;
     margin-left: 30px;
     padding: 10px;
     color: whitesmoke;
@@ -141,6 +142,16 @@ span {
 
 /* Mywork Section */
 
+#mywork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .main {
     width:100% ;
     height: 400px;
@@ -238,14 +249,13 @@ span {
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: center;
 }
 
 .contactinfo form {
-    width: 40%;
+    width: 40em;
 	display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -305,25 +315,24 @@ span {
 }
 
 .links {
-    width: 40%;
-    margin-right: 20px;
+    width: 20%;
+    margin: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    
 }
 
 .links h5 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 22px;
 }
 
-.links h5,
 .links a {
-    color: whitesmoke;
-    font-size: 18px;
-    margin-left: 40%;
     text-decoration: none;
-    list-style: none;
+    color: whitesmoke;
 }
 
 /* Footer Section */
@@ -349,5 +358,246 @@ footer h3 {
     color: white;
     font-weight: lighter;
     font-family: cursive;
+}
+
+/* For laptops */
+@media screen and (max-width: 1200px) {
+    .biopic img {
+        width:40vm ;
+        max-width: 500px;
+    }
+    .contactinfo form {
+        width:80%;
+    }
+
+    .links {
+        width:30%;
+    }
+
+    .boxdesign1,
+    .boxdesign {
+        width: 45%;
+    }
+    .main .icon img {
+        height: 100px;
+        width: 180px;
+    }
+    .main .icon img:hover {
+        height: 150px;
+        width: 270px;
+    }
+}
+
+/* for smaller laptops */
+@media screen and (max-width: 1060px) {
+    header {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .subheading {
+        font-size: 38px;
+    }
+    
+    .boxdesign1,
+    .boxdesign {
+        width: 85%;
+    }
+}
+
+/* for tablets */
+@media screen and (max-width: 900px) {
+
+    header {
+        padding: 10px 10px;
+        justify-content: flex-start;
+    } 
+
+    header h1 {
+        padding: 5px;   
+    }
+
+    header nav ul li a {  
+        line-height: 10px;
+        font-size: 12px;
+    }
+
+    header section button {
+        margin: 12px;
+        padding: 8px;
+    }
+
+    header section button a {
+        font-size: smaller;
+    } 
+
+    .subheading {
+        font-size: 28px;
+    }
+
+    .biopic img {
+        max-width: 350px;
+    }
+
+    .para {
+        padding: 10px;
+    }
+
+    .boxdesign1,
+    .boxdesign {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .contactinfo {
+        justify-content: center;
+    }
+    .contactinfo form {
+        width:80%;
+    }
+
+    .links {
+        width:40%;
+    }
+
+    .contactinfo h3 {
+       
+        font-size: 23px;
+    }
+
+    .main {
+        height: 100%;
+    }
+
+    .links h5 {
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-left: 0%;
+        justify-content: space-between;
+    } 
+}
+
+/* for phones */
+@media screen and (max-width: 600px) {
+    body {
+        width: 109%;
+    }
+
+    header {
+        display: inline-block;
+        height: fit-content;
+        width: 100%;
+    }
+
+    header h1 {
+        float: left;
+        font-size: x-large;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        float: right;
+    } 
+
+    header nav ul li a {  
+        font-size: 8px;
+    }
+
+    header section button {
+        margin-left: 50px;
+        padding: 3px;
+    }
+    header section button a {
+        font-size: xx-small;
+    } 
+
+    .subheading {
+        font-size: 18px;
+    }
+
+    .boxpara,
+    .boxpara1,
+    .para {
+        font-size: small;
+        padding: 0 20px 0 20px;
+    }
+
+    .biopic img {
+        max-width: 250px;
+    }
+
+    .main .icon img:hover,
+    .icon img:hover {
+        height: 100px;
+        width: 180px;
+    }
+
+    .contactinfo form,
+    .contactinfo {
+        width: 100%;  
+    }
+    
+    .contactinfo form input, 
+    .contactinfo form textarea {
+        padding: 7px 10px;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .contactinfo h3 {
+        font-size: 20px;  
+    }
+    
+    .contactinfo form button {
+        padding: 10px 10px;
+        font-size: 10px;
+    }
+    
+    .contactme {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .links {
+        width:80%;
+    }
+    
+    .links h5 {
+        justify-content: space-between;
+    } 
+    .links a {
+        font-size: small;
+    }
+    
+    footer h3 {
+        font-size: x-small;
+    }
+
+    footer h2 {
+        font-size: xx-small;
+    }
+    
+}
+
+/* smaller phones like galaxy fold & apple SE */
+@media screen and (max-width: 320px) {
+
+    header h1 {
+        float: left;
+        font-size: larger;
+    }
+
+    .links h5 a {
+        font-size: smaller;
+    }
+
+    .main .icon img:hover,
+    .icon img:hover,
+    .main .icon img,
+    .icon img {
+        height: 80px;
+        width: 160px;
+    }
+
 }
 
