@@ -582,22 +582,9 @@ footer h3 {
 /* smaller phones like galaxy fold & apple SE */
 @media screen and (max-width: 320px) {
 
-    header h1 {
-        float: left;
-        font-size: larger;
-    }
-
-    .links h5 a {
-        font-size: smaller;
-    }
-
-    .main .icon img:hover,
-    .icon img:hover,
-    .main .icon img,
-    .icon img {
-        height: 80px;
-        width: 160px;
-    }
+#listen {
+    margin: 5px;
+}
 
 }
 
